@@ -1,5 +1,5 @@
 import './style.css'
-import { stopwatch } from './timer'
+import { stopwatch,stop } from './timer'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -8,3 +8,7 @@ document.querySelector('#app').innerHTML = `
     <button id="stp">Stop</button>
   </div>
 `
+let flag = false;
+
+document.getElementById("strt").addEventListener('click', () => stopwatch(flag));
+document.getElementById("stp").addEventListener('click', () => stop(flag));
