@@ -1,14 +1,13 @@
-let flag = false;
+let isStopped = false;
 let time = {
   min: "00",
   sec: "00",
   mil: "00"
 }
 
-export function stopwatch(event) {
-  console.log(event);
+export function stopwatch() {
   document.getElementById("timer").innerHTML = time.min + ":" + time.sec + ":" + time.mil;
-  if (flag === false)
+  if (isStopped  === false)
   {
     time.mil++;
     if (time.mil == 100)
@@ -25,11 +24,18 @@ export function stopwatch(event) {
   }
 }
 
-export function reset(event) {
-  console.log(event);
+export function reset() {
   time.min = time.sec = time.mil = "00";
 }
 
-export function stop(event) {
-  flag = !flag;
+export function stop() {
+  if (isStopped  === true)
+  {
+    isStopped = false;
+    stopwatch();
+  }
+  else if (isStopped  === false)
+  {
+    isStopped = true;
+  }
 }
