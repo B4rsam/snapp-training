@@ -3,7 +3,7 @@ import {getList} from './api.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <div id="bigBox" style="background-color: white;"></div>
+    <div id="bigBox" style="background-color: white; color: black;"></div>
     <button id="listButton">See List</button>
   </div>
 `
