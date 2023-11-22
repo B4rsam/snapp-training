@@ -40,6 +40,8 @@ export function getList() {
                 card.classList.add("card");
                 i++;
 
+                cardButton.addEventListener("click", deleteCard);
+
                 return card;
             }
              )
@@ -48,11 +50,12 @@ export function getList() {
                 cardList.classList.add("cardList");
              });
              console.log(cardList);
-             document.getElementById("cardArea").appendChild(cardList); 
+             document.getElementById("cardArea").appendChild(cardList);
         })
         .catch(console.log("fail"));
 }
 
 function deleteCard() {
+    console.log("Delete called for id: " + this.id)
     document.getElementById(this.id).parentElement.remove();
 }
