@@ -1,3 +1,4 @@
+/*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -93,4 +94,29 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+*/
+
+#listButton {
+  background-color: aqua;
+  margin: auto;
+  padding-inline: 8px;
+  border-radius: 8px;
+  border: 8px;
+  border-color: black;
+}
+
+#cardArea {
+  
+}
+
+.card {
+  background-color: azure;
+  margin-inline: 8px;
+  align-content: center;
+  border-radius: 8px;
+  padding-block: 12px;
+  padding-inline: 8px;
+  margin-block: 8px;
 }
