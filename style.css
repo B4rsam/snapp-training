@@ -100,15 +100,17 @@ button:focus-visible {
 
 #listButton {
   background-color: aqua;
-  margin: auto;
+  margin-top: 8px;
+  margin-inline: 5%;
   padding-inline: 8px;
   border-radius: 8px;
   border: 8px;
   border-color: black;
 }
 
-#cardArea {
-  
+.cardList {
+  /*display: flex;
+  flex-shrink: 0; */
 }
 
 .card {
@@ -119,4 +121,21 @@ button:focus-visible {
   padding-block: 12px;
   padding-inline: 8px;
   margin-block: 8px;
+}
+
+.cardTitle {
+  text-align: center;
+}
+
+.cardId {
+  margin-inline: 8px;
+}
+
+.cardUserId {
+  margin-inline: 8px;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: center;
 }
