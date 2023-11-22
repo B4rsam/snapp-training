@@ -56,6 +56,6 @@ export function getList() {
 }
 
 function deleteCard() {
-    console.log("Delete called for id: " + this.id)
+    console.log("Delete called from button id: " + this.id)
     document.getElementById(this.id).parentElement.remove();
 }
