@@ -101,7 +101,7 @@ button:focus-visible {
 #listButton {
   background-color: aqua;
   margin-top: 8px;
-  margin-inline: 5%;
+  margin-inline: auto;
   padding-inline: 8px;
   border-radius: 8px;
   border: 8px;
@@ -138,4 +138,15 @@ button:focus-visible {
 .cardBox {
   display: flex;
   justify-content: center;
+}
+
+.cardButton {
+  background-color: red;
+  color: white;
+  margin-inline: 8px;
+  padding-inline: 8px;
+  border-radius: 8px;
+  border: 8px;
+  border-color: black;
+  margin-inline: auto;
 }
