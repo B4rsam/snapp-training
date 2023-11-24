@@ -57,5 +57,9 @@ export function getList() {
 
 function deleteCard() {
     console.log("Delete called from button id: " + this.id)
+    let id = toString(this.id)
     document.getElementById(this.id).parentElement.remove();
+    fetch("https://jsonplaceholder.typicode.com/posts/"+ id.match(/(\d+)/) , {
+        method: 'DELETE',
+    })
 }
