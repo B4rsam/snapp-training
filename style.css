@@ -137,7 +137,8 @@ button:focus-visible {
 
 .cardBox {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  
 }
 
 .cardButton {
